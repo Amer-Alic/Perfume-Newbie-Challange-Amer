@@ -1,0 +1,284 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS RESET */
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.image2 {
+    display: none;
+}
+
+#tag {
+    color: #6c757d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    Font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #6c757d;
+}
+
+.main-price {
+    font-size: 2.5rem;
+    color: #2d6a4f;
+    Font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+}
+
+.side-price {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 8px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border: 0px;
+    transition: 500ms;
+}
+
+button:active {
+    background-color: #1b4332;
+}
+
+#cart {
+    transform: translate(-3px, 2px);
+}
+
+/* positioning */
+
+.mainPanel {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 95vw;
+    /* min-height: 90vh; */
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    padding: 25px;
+}
+
+.left-side {
+    height: 50%;
+}
+
+.image2 {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+#tag {
+
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:850px) {
+    .image2 {
+        display: block;
+    }
+
+    .image1 {
+        display: none;
+    }
+}
+
+@media (min-width: 850px) {
+    .mainPanel {
+        flex-direction: row;
+        max-width: 700px;
+        max-height: 500px;
+        overflow: hidden;
+    }
+
+    .image1 {
+        height: 100%;
+
+    }
+
+    .leftside,
+    .rightside {
+        width: 50%
+    }
+}
